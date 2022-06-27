@@ -1,0 +1,6 @@
+<div class="board">
+    <app-timer (scoreEmitEvent)="saveScore($event)"></app-timer>
+    <app-cells [rows]="rows" [cols]="cols" [probability]="probability" (gameOverEvent)="gameOver($event)"
+        (gameStartedEvent)="gameStarted()"></app-cells>
+    <app-game-over *ngIf="gameOutcome != undefined" [score]="score" [gameOutcome]="gameOutcome"></app-game-over>
+</div>

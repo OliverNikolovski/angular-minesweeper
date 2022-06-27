@@ -1,0 +1,11 @@
+<div class="cell-board">
+    <div *ngFor="let cellRow of cellBoard" class="cell-row">
+        <div *ngFor="let cell of cellRow" 
+            [class.mine]="cell.isMined"
+            [class.opened]="cell.state === 'opened'" 
+            (click)="openCell(cell)"
+            (contextmenu)="flagCell($event, cell)" class="cell">
+            <span>{{ cell.content }}</span>
+        </div>
+    </div>
+</div>

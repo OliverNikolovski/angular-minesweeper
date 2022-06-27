@@ -1,0 +1,6 @@
+<p class="game-result" [class.game-won]="gameOutcome === 'win'" 
+    [class.game-lost]="gameOutcome === 'lose'">
+    {{gameOutcome === 'win' ? 'You Win!' : 'You Lose!' }}
+</p>
+<p *ngIf="gameOutcome === 'win'" class="score">Time: <span>{{score}}</span></p>
+<button type="button" (click)="startNewGame()">Play Again</button>
