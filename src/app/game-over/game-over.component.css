@@ -21,6 +21,10 @@
     font-weight: bold;
 }
 
+.game-result, .score {
+  text-align: center;
+}
+
 button {
     background-color: #0a6bff;
     border-radius: 4px;

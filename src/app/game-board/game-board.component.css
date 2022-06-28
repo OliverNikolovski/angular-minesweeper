@@ -1,6 +1,4 @@
 .board {
     display: grid;
     justify-items: center;
-    margin-top: 100px;
-    row-gap: 1rem;
 }
